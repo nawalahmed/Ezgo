@@ -21,5 +21,13 @@ func setupRouter() -> Routes {
         OrdersDetailController().handleOrdersDetailRequest(request: request, response: response)
     }
     
+    routes.add(method: .post, uri: "/sendData", handler: { request, response in
+        OrdersDataController().handleDataRequest(request: request, response: response)
+    })
+    
+    routes.add(method: .get, uri: "/word", handler: { request, response in
+        MustacheHelper(values: [:]).renderAdminPanel(request: request, response: response)
+    })
+    
     return routes
 }

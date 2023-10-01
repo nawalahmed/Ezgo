@@ -10,6 +10,15 @@
       }
     },
     {
+      "identity" : "perfect-crud",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/PerfectlySoft/Perfect-CRUD.git",
+      "state" : {
+        "revision" : "5a947634b7ce0b991e8f455a61ce02449f2e6f36",
+        "version" : "1.2.3"
+      }
+    },
+    {
       "identity" : "perfect-crypto",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/PerfectlySoft/Perfect-Crypto.git",
@@ -46,12 +55,39 @@
       }
     },
     {
+      "identity" : "perfect-mustache",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/PerfectlySoft/Perfect-Mustache.git",
+      "state" : {
+        "revision" : "a3bce7e83fb6995cb2048c2dab75e7ce07773819",
+        "version" : "3.0.2"
+      }
+    },
+    {
       "identity" : "perfect-net",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/PerfectlySoft/Perfect-Net.git",
       "state" : {
         "revision" : "d00b2b9f4cccb4c398e1bcf18f767d6b8add6af7",
         "version" : "3.3.0"
+      }
+    },
+    {
+      "identity" : "perfect-sqlite",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/PerfectlySoft/Perfect-SQLite.git",
+      "state" : {
+        "revision" : "420002c79529f8307cf0dda832069a46e466ae82",
+        "version" : "3.1.4"
+      }
+    },
+    {
+      "identity" : "perfect-sqlite3-support",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/PerfectlySoft/Perfect-sqlite3-support.git",
+      "state" : {
+        "revision" : "64c2bd87e1fd3a41cdeeba073bab794db7e97e42",
+        "version" : "3.1.1"
       }
     },
     {
@@ -70,6 +106,15 @@
       "state" : {
         "revision" : "5a08c2a596df23a3ae30b6ac9cb509a38384166c",
         "version" : "3.1.4"
+      }
+    },
+    {
+      "identity" : "swiftybeaver",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftyBeaver/SwiftyBeaver.git",
+      "state" : {
+        "revision" : "12b5acf96d98f91d50de447369bd18df74600f1a",
+        "version" : "1.9.6"
       }
     }
   ],

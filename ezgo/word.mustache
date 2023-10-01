@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+</head>
+<body>
+    <h1>Admin Panel</h1>
+    
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Package</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Total Amount</th>
+            <th>Update Status</th>
+        </tr>
+        {{#orders}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{packageName}}</td>
+            <td>{{description}}</td>
+            <td>{{status}}</td>
+            <td>{{totalAmount}}</td>
+            <td>
+                {{#canUpdate}}
+                <button onclick="updateOrderStatus('{{id}}', '{{status}}')">Update</button>
+                {{/canUpdate}}
+            </td>
+        </tr>
+        {{/orders}}
+    </table>
+
+    <script>
+        function updateOrderStatus(orderId, currentStatus) {
+            // Implement the logic here to send an API request or perform any other action to update the status
+            // You can use AJAX or fetch() to make the API call to your backend server.
+            // For example:
+            // fetch('/updateOrderStatus', {
+            //     method: 'POST',
+            //     headers: {
+            //         'Content-Type': 'application/json',
+            //     },
+            //     body: JSON.stringify({
+            //         orderId: orderId,
+            //         currentStatus: currentStatus,
+            //     }),
+            // })
+            // .then(response => response.json())
+            // .then(data => {
+            //     // Handle the response from the server, such as updating the UI.
+            //     console.log('Order status updated successfully!', data);
+            // })
+            // .catch(error => {
+            //     console.error('Error updating order status:', error);
+            // });
+        }
+    </script>
+</body>
+</html>
